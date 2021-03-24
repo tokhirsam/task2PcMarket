@@ -12,7 +12,7 @@ import java.util.List;
 @Projection(types = UserBasket.class)
 public interface CustomUserBasket {
    public Integer getId();
-   public User getUserId();
+   public User getUser();
    public List<OutputProduct> getOutputProducts();
 
 

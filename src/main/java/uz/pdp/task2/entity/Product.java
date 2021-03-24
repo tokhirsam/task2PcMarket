@@ -21,12 +21,12 @@ public class Product {
     private Double price;
     private boolean active;
     @ManyToOne
-    private Category categoryId;
+    private Category category;
     @OneToOne
-    private  Attachment attachmentId;
+    private  Attachment attachment;
     @OneToMany
     private List<Comment> comments;
-    @OneToMany
-    private List<Characteristics> characteristics;
+    @OneToOne
+    private Characteristics characteristics;
 
 }

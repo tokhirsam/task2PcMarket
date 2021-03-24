@@ -17,8 +17,8 @@ public interface CustomProduct {
    public String getDescription();
    public Double getPrice();
    public boolean getActive();
-   public Category getCategoryId();
-   public Attachment getAttachmentId();
+   public Category getCategory();
+   public Attachment getAttachment();
    public List<Comment> getComments();
    public List<Characteristics> getCharacteristics();
 

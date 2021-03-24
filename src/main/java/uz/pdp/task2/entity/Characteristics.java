@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -16,6 +17,6 @@ public class Characteristics {
     private Integer id;
 //    qiymati
     private String name;
-    @OneToOne
-    private  Type type;
+    @OneToMany
+    private List<Type> type;
 }
